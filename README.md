@@ -8,3 +8,5 @@ O site é feito a partir de html, css e javascript <b>puro</b>, utilizando-se de
 <li>CSS</li>
 <li>JAVASCRIPT</li>
 </ul>
+
+![library](https://user-images.githubusercontent.com/115052701/223454354-33349f4b-f8bd-4841-9612-8db424cd5bca.PNG)
