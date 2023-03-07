@@ -7,6 +7,26 @@
 body{
     background-color: #094bff54;
 }
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.newBook{
+    padding: 8px;
+    background-color: #6b91f8;
+    border: none;
+    border-radius: 5px;
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 200ms;
+    border: 2px solid rgba(0, 0, 0, 0.144);
+}
+.newBook:hover{
+    background-color: #003ada;
+    color: white;
+}
 main{
     padding: 10px;
     margin-top: 60px;
@@ -62,7 +82,9 @@ section{
     margin-top: 10px;
 }
 .readed{
-    color: rgb(24, 207, 24);
+    color: rgb(28, 241, 28);
+    background-color: green;
+    padding: 5px;
     text-align: center;
     margin-top: 20px;
 }

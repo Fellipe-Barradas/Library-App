@@ -11,6 +11,23 @@
 <body>
     <main>
         <h2>Books for you!</h2>
+        <div class="nav">
+            <button class="newBook" onclick="addBook()">New book</button>
+        </div>
+        <div>
+            <form class="formBook">
+                <h1>Adicione seu livro</h1>
+                <label for="titleBook">Título:</label>
+                <input type="text" name="titleBook" id="titleBook" placeholder="Adicione o titulo do livro...">
+                <label for="authorBook">Autor(a):</label>
+                <input type="text" name="authorBook" id="authorBook" placeholder="Adicione o autor(a) do livro...">
+                <label for="pages">Quantidade de páginas:</label>
+                <input type="number" name="pages" id="pages">
+                <label for="readed">Já foi lido?</label>
+                <input type="checkbox" name="readed" id="readed">
+                <input type="submit" value="Criar">
+            </form>
+        </div>
         <section class="Books-Case">
 
         </section>
