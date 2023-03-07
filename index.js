@@ -32,10 +32,20 @@ function createCardBook(array){
     const author = document.createElement("h5")
     const content = document.createElement("p")
     const readed = document.createElement("p")
+    const deleteButton = document.createElement("button")
+    //adicionando a função de deletar o card caso clicado
+    deleteButton.addEventListener('click', ()=>{
+      const parent = deleteButton.parentNode // elemento "pai" do botão
+      parent.remove()
+    })
+    deleteButton.className= 'deleteBtn'
     const read = item.read
     if(!read){
       readed.innerHTML = "Ainda não aberto"
       readed.className = 'not-readed'
+    }else{
+      readed.innerHTML = "Leitura em progresso"
+      readed.className = 'readed'
     }
     title.innerHTML = item.title;
     author.innerHTML = item.author;
@@ -45,6 +55,7 @@ function createCardBook(array){
     card.appendChild(author)
     card.appendChild(content)
     card.appendChild(readed)
+    card.appendChild(deleteButton)
     card.className = 'card'
 //Onclick vai trocar os estado do readed
     card.addEventListener("click", ()=>{
@@ -64,7 +75,7 @@ const userReaded = document.querySelector('#readed');
 form.addEventListener('submit', (e)=>{
    e.preventDefault()
    deleteCards()
-   var userBook = new Book(userAuthor.value, userTitle.value, userPages.value)
+   var userBook = new Book(userAuthor.value, userTitle.value, userPages.value, userReaded.checked)
    addBookToLibrary(userBook)
    createCardBook(myLibrary)
 })
