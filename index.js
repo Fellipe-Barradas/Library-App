@@ -17,7 +17,11 @@ const historyBook = new Book("Gilberto", "Era renascentista", 120, false)
 const geographyBook = new Book("Jailson", "Movimento das placas tectônicas", 60, false)
 addBookToLibrary(historyBook)
 addBookToLibrary(geographyBook)
-
+//Deletar os cards
+function deleteCards(){
+  const section = document.querySelector(".Books-Case")
+  section.innerText = ''
+}
 
 //Criando cards para livros e inserindo na section
 function createCardBook(array){
@@ -52,3 +56,15 @@ function createCardBook(array){
 }
 createCardBook(myLibrary)
 //Adicionar livros pelo usuário
+const form = document.querySelector('.formBook');
+const userTitle = document.querySelector('#titleBook');
+const userAuthor = document.querySelector('#authorBook');
+const userPages = document.querySelector('#pages');
+const userReaded = document.querySelector('#readed');
+form.addEventListener('submit', (e)=>{
+   e.preventDefault()
+   deleteCards()
+   var userBook = new Book(userAuthor.value, userTitle.value, userPages.value)
+   addBookToLibrary(userBook)
+   createCardBook(myLibrary)
+})
