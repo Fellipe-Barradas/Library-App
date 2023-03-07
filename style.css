@@ -31,12 +31,7 @@ nav{
     color: rgb(48, 48, 48);
     font-weight: bold;
     font-size: 1rem;
-    transition: 200ms;
     border: 2px solid rgba(0, 0, 0, 0.144);
-}
-.newBook:hover{
-    background-color: #003ada;
-    color: white;
 }
 .formBook{
     display: flex;
@@ -93,8 +88,7 @@ section{
     justify-content: space-around;
     background-color: rgb(216, 216, 216);
     padding: 10px;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.144);
-    border-left: 2px solid rgba(0, 0, 0, 0.623);
+    border-right: 2px solid rgba(0, 0, 0, 0.623);
     width: 70%;
 }
 .card{
