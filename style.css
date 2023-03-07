@@ -7,6 +7,11 @@
 body{
     background-color: #094bff54;
 }
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
 .nav{
     display: flex;
     justify-content: center;
@@ -27,11 +32,34 @@ body{
     background-color: #003ada;
     color: white;
 }
-main{
+.formBook{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 20px;
+    width: 220px;
+    background-color: #094bff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
     padding: 10px;
-    margin-top: 60px;
-
-
+}
+.formBook h1{
+    font-size: 1.5rem;
+}
+.formBook label{
+    margin: 10px 0px 0px 0px;
+}
+.formBook div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formBook input{
+   margin-top: 5px;
+   color: black;
+}
+.submit{
+    margin-top: 10px;
+    color: black;
+    width: 25%;
 }
 main h2{
     margin-left: 20px;
@@ -39,6 +67,7 @@ main h2{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
     background-color: #007DE8;
     margin: auto;
+    margin-top: 20px;
     width: fit-content;
     padding: 5px;
     border-radius: 5px;
@@ -50,6 +79,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    box-shadow: 1px 4px black;
+    border-top: 2px solid black;
 }
 .card{
     width: 250px;
@@ -59,6 +92,7 @@ section{
     background-color: #094bff;
     position: relative;
     transition: 500ms;
+    cursor: pointer;
    
 }
 .card:hover{
