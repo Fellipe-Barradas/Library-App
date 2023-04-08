@@ -89,3 +89,19 @@ form.addEventListener("submit", (e) => {
   addBookToLibrary(userBook);
   createCardBook(myLibrary);
 });
+//Adicionar butão de voltar ao topo
+const backTop = document.querySelector(".hidden");
+window.onscroll = function(){
+  if(document.body.scrollTop > 100 || document.documentElement.scrollTop>200){
+    console.log("Vambora")
+    backTop.style.position = 'fixed'
+    backTop.style.display = 'block'
+
+  }else{
+    backTop.style.display = 'none'
+  }
+}
+backTop.addEventListener('click', function(){
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
+})
